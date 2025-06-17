@@ -1,0 +1,113 @@
+/* Healthy Recipes CSS Styling */
+/* Complete solution for all 7 tasks with detailed explanations */
+/* Based on the provided index.html structure */
+
+/* Task 1: Style the main salad image at the top of the page */
+/* Target: img tag - selects the salad image element */
+img {
+  height: 150px;
+  /* Sets the height of the salad image to 150 pixels */
+  /* This makes the large recipe image smaller and more manageable on the page */
+  /* You can experiment with different values like 100px, 200px, 250px, etc. */
+  /* The image will maintain its aspect ratio while scaling to this height */
+}
+
+/* Task 2: Make the recipe description text larger and more prominent */
+/* Target: .description class - selects the paragraph with class="description" */
+/* This targets: "Kale and quinoa provide a healthy base for roasted chicken..." */
+.description {
+  font-size: 20px;
+  /* Increases the font size to 20 pixels (default is usually 16px) */
+  /* This makes the recipe description more readable and gives it emphasis */
+  /* The description explains what the dish is, so it should stand out */
+}
+
+/* Task 3: Make the cooking time text bold and prominent */
+/* Target: #cook-time ID - selects the element with id="cook-time" */
+/* This targets: "Total time: 45 minutes" */
+#cook-time {
+  font-weight: bold;
+  /* Makes the total cooking time text bold/thicker */
+  /* This draws attention to the important timing information */
+  /* IDs are unique identifiers, so this targets only the total time element */
+  /* Bold text helps users quickly find how long the recipe takes */
+}
+
+/* Task 4: Change ingredient list bullets to squares */
+/* Target: li elements inside .ingredients - descendant selector */
+/* This targets the ingredients: kale, quinoa, olive oil, chicken breast, Caesar dressing */
+.ingredients li {
+  list-style: square;
+  /* Changes the default circular bullet points to square shapes */
+  /* This gives the ingredient list a more distinctive, modern appearance */
+  /* Square bullets help differentiate ingredients from the numbered preparation steps */
+  /* Other list-style options include: disc, circle, decimal, roman, none */
+}
+
+/* Task 5: Make preparation step times appear gray */
+/* Target: p elements that also have class="time" - multiple class selector */
+/* This targets: "Time: 40 minutes", "Time: 4 minutes", "Time: 1 minute" */
+p.time {
+  color: gray;
+  /* Changes text color to gray for individual step timing info */
+  /* This creates visual hierarchy by de-emphasizing the step times */
+  /* The dot notation (p.time) means "p elements WITH class time" */
+  /* Gray color makes times less prominent than the main instructions */
+}
+
+/* Task 6: Style the external recipe link */
+/* Target: .external-link class - selects the link with class="external-link" */
+/* This targets the "here" link that goes to myrecipes.com */
+.external-link {
+  color: SeaGreen;
+  /* Changes the external link color to SeaGreen (a blue-green color) */
+  /* This makes the external recipe link stand out from regular text */
+  /* SeaGreen (#2E8B57) is a CSS named color that's visually appealing */
+  /* The link is inside the citation paragraph at the bottom of the page */
+}
+
+/* Task 7: Apply Helvetica font to all main text elements */
+/* Target: Multiple element types using comma-separated selectors */
+/* This affects: title (h1), "Ingredients"/"Preparation" (h2), all paragraphs (p), and list items (li) */
+h1, h2, p, li {
+  font-family: Helvetica;
+  /* Changes font from default Times New Roman to Helvetica */
+  /* Helvetica is a clean, modern sans-serif font that's easy to read */
+  /* Using grouped selectors (comma-separated) applies the same style to multiple elements */
+  /* This creates consistent typography throughout the entire recipe page */
+  /* More efficient than writing separate font-family rules for each element type */
+}
+
+/* Additional Explanations for the Quinoa and Kale Salad Recipe:
+ * 
+ * HTML Structure Analysis:
+ * - img: Salad photo at the top
+ * - h1: "Kale Caesar Quinoa Salad with Roasted Chicken" 
+ * - p.description: Recipe description paragraph
+ * - p#cook-time: "Total time: 45 minutes"
+ * - ul.ingredients: Unordered list with 5 ingredients
+ * - ol: Ordered list with 3 preparation steps
+ * - p.time: Time for each preparation step (3 instances)
+ * - p.citation with a.external-link: Link to full recipe
+ * 
+ * CSS Selectors Used:
+ * - Element selector (img): Targets the salad image
+ * - Class selector (.description): Targets recipe description
+ * - ID selector (#cook-time): Targets unique total time element
+ * - Descendant selector (.ingredients li): Targets ingredient list items
+ * - Multiple class selector (p.time): Targets step timing paragraphs
+ * - Class selector (.external-link): Targets external recipe link
+ * - Grouped selector (h1, h2, p, li): Applies font to all text elements
+ * 
+ * Visual Improvements Achieved:
+ * - Appropriately sized hero image (150px height)
+ * - Emphasized recipe description (20px font)
+ * - Bold total cooking time for quick reference
+ * - Square bullets for ingredient list (modern look)
+ * - Subdued step times in gray (visual hierarchy)
+ * - Distinctive SeaGreen external link color
+ * - Consistent Helvetica font throughout (professional appearance)
+ * 
+ * This styling transforms a plain HTML recipe into a well-designed,
+ * readable, and visually appealing cooking guide!
+ */
