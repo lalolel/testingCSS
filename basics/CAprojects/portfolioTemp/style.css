@@ -1,0 +1,35 @@
+/* Olivia Woodruff Portfolio CSS Styles */
+
+/* Task 7: Set the font family for the entire page */
+/* The body selector applies styles to the entire page content */
+body {
+    font-family: Georgia; /* Changes the default font from Times to Georgia for better readability */
+    /* Task 8: Add background image to make the page more visually interesting */
+    background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png'); /* Adds a subtle pattern background */
+}
+
+/* Task 1: Style the header section to make it stand out */
+/* Task 2: Center align the text in the header */
+.header {
+    background-color: CornflowerBlue; /* Light blue background color for the header section */
+    text-align: center; /* Centers all text content within the header horizontally */
+}
+
+/* Task 6: Change the main title color to complement the header background */
+/* Targets all h1 elements (main headings) on the page */
+h1 {
+    color: Azure; /* Light blue-white color that contrasts nicely with CornflowerBlue background */
+}
+
+/* Task 3: Increase font size of the about-me paragraph */
+/* Task 4: Add transparency to the about-me text for better visual blend */
+.about-me {
+    font-size: 20px; /* Increases text size from default to make it more prominent and readable */
+    opacity: 0.5; /* Makes the text 50% transparent (0.5 = 50%) so it blends better with the background */
+}
+
+/* Task 5: Make section titles bold for better hierarchy */
+/* Targets elements with the 'title' class (section headings like "Projects", "Contact") */
+.title {
+    font-weight: bold; /* Makes the text bold to create visual hierarchy and emphasis */
+}
